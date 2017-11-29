@@ -1,0 +1,17 @@
+<html>
+  {% if title %}
+  <title>{{ title }} - Flask Page</title>
+  {% else %}
+  <title>FlaskPage</title>
+  {% endif %}
+  </head>
+  <body>
+    <h1>{{ admin.name }}!</h1>
+    {% for i in images %}
+    <div><p>{{ i.hotel.name }}</p> 
+      <img src="{{i.imglink}}"></div>
+    {% endfor %}
+  </body>
+  
+  
+</html>
